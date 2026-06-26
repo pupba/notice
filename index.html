@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>단국산학아카데미 6기 X 프레스티크 OT 가이드</title>
     
-    <!-- Google Fonts (Inter & Pretendard 대체용 Noto Sans KR) -->
+    <!-- Google Fonts (Inter & Noto Sans KR) -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,10 +21,10 @@
                             100: '#e6ebdb',
                             200: '#cbd7b8',
                             300: '#adc193',
-                            600: '#526e31', // 가독성 향상을 위해 더 짙은 그린으로 변경 (4.5:1 대비 확보)
-                            700: '#3f5525',
-                            800: '#30411d',
-                            900: '#1f2a13',
+                            600: '#435c24', // 훨씬 더 짙고 선명한 올리브 그린으로 대비 강화
+                            700: '#34471c',
+                            800: '#253314',
+                            900: '#17200c',
                         },
                         gold: {
                             100: '#fcf6db',
@@ -45,7 +45,7 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #fcfdfa;
+            background-color: #ebede6; /* 배경을 어둡게 낮춰 흰색(bg-white) 카드들이 뚜렷하게 도드라지도록 전면 수정 */
         }
         /* 커스텀 부드러운 스크롤 */
         html {
@@ -57,20 +57,20 @@
         }
         .hover-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 24px -10px rgba(82, 110, 49, 0.25);
+            box-shadow: 0 16px 28px -8px rgba(37, 51, 20, 0.25);
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased selection:bg-olive-200">
+<body class="text-gray-900 antialiased selection:bg-olive-200">
 
     <!-- Hero Section -->
     <header class="relative bg-gradient-to-br from-olive-900 via-olive-800 to-olive-900 text-white overflow-hidden py-16 md:py-24">
         <!-- 배경 패턴 장식 -->
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-15">
             <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
                 <defs>
                     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1.5"/>
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="url(#grid)" />
@@ -90,7 +90,7 @@
             </p>
             
             <!-- 기업 매칭 뱃지 -->
-            <div class="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/25 shadow-xl max-w-lg mx-auto">
+            <div class="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 shadow-xl max-w-lg mx-auto">
                 <div class="flex items-center gap-2">
                     <span class="text-gold-500 text-xl font-bold">Matching Enterprise</span>
                 </div>
@@ -116,88 +116,88 @@
         <!-- 섹션 1: 기업 소개 & 핵심 비즈니스 -->
         <section class="mb-16">
             <div class="flex items-center gap-3 mb-8">
-                <div class="w-2 h-8 bg-olive-600 rounded-full"></div>
+                <div class="w-3 h-8 bg-olive-600 rounded-full"></div>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">우리가 실무를 함께할 스타트업은?</h2>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                <!-- 회사 카드 -->
-                <div class="lg:col-span-5 bg-white p-6 md:p-8 rounded-3xl border border-olive-100 shadow-md flex flex-col justify-between hover-card">
+                <!-- 회사 카드 (경계선 두께 및 컬러 대비 보강) -->
+                <div class="lg:col-span-5 bg-white p-6 md:p-8 rounded-3xl border-2 border-gray-300 shadow-lg flex flex-col justify-between hover-card">
                     <div>
                         <div class="flex items-center justify-between mb-6">
-                            <span class="text-xs font-bold text-olive-700 tracking-wider bg-olive-100 px-3 py-1 rounded-md uppercase">Brand Story</span>
-                            <a href="https://www.oliave.co.kr" target="_blank" class="text-xs text-olive-700 hover:text-olive-900 font-bold flex items-center gap-1 transition-colors">
+                            <span class="text-xs font-bold text-olive-800 tracking-wider bg-olive-100 px-3 py-1 rounded-md uppercase border border-olive-200">Brand Story</span>
+                            <a href="https://www.oliave.co.kr" target="_blank" class="text-xs text-olive-800 hover:text-olive-950 font-black flex items-center gap-1 transition-colors underline">
                                 <i class="fa-solid fa-earth-americas"></i> 공식몰 바로가기 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         </div>
                         <h3 class="text-2xl font-black text-olive-900 mb-2">프레스티크 주식회사</h3>
-                        <p class="text-sm text-gray-600 mb-6 font-medium">최고의 가치를 식탁 위에 올리는 프리미엄 식문화 브랜드</p>
+                        <p class="text-sm text-gray-700 mb-6 font-bold">최고의 가치를 식탁 위에 올리는 프리미엄 식문화 브랜드</p>
                         
-                        <div class="space-y-4 text-sm text-gray-700 border-t border-gray-100 pt-6">
+                        <div class="space-y-4 text-sm text-gray-800 border-t-2 border-gray-200 pt-6">
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-map-location-dot text-olive-600 mt-1"></i>
+                                <i class="fa-solid fa-map-location-dot text-olive-600 mt-1 text-base"></i>
                                 <span><strong>위치:</strong> 단국대학교 죽전캠퍼스 산학협력관 425-J호</span>
                             </div>
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-briefcase text-olive-600 mt-1"></i>
+                                <i class="fa-solid fa-briefcase text-olive-600 mt-1 text-base"></i>
                                 <span><strong>비즈니스:</strong> 유기농 오일 및 고품격 발사믹식초 온/오프라인 마케팅 & 유통(B2B, B2C)</span>
                             </div>
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-bullseye text-olive-600 mt-1"></i>
+                                <i class="fa-solid fa-bullseye text-olive-600 mt-1 text-base"></i>
                                 <span><strong>이번 목표:</strong> 온라인 채널(SEO/숏폼/기획전) 매출 극대화</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bg-olive-50 p-4 rounded-2xl mt-8 flex items-center gap-3 border border-olive-100">
-                        <div class="p-2.5 bg-olive-200 rounded-xl text-olive-800">
-                            <i class="fa-solid fa-gift text-lg"></i>
+                    <div class="bg-olive-50 p-4 rounded-2xl mt-8 flex items-center gap-3 border-2 border-olive-200/80">
+                        <div class="p-2.5 bg-olive-200 rounded-xl text-olive-900">
+                            <i class="fa-solid fa-gift text-xl"></i>
                         </div>
-                        <span class="text-xs text-gray-800 leading-relaxed font-bold">프로젝트 성료 시 참여 전원에게 <strong class="text-olive-800">자사 고급 선물 세트</strong>를 리워드로 제공합니다!</span>
+                        <span class="text-xs text-gray-900 leading-relaxed font-bold">프로젝트 성료 시 참여 전원에게 <strong class="text-olive-800 underline">자사 고급 선물 세트</strong>를 리워드로 제공합니다!</span>
                     </div>
                 </div>
 
-                <!-- 핵심 상품 카드들 -->
+                <!-- 핵심 상품 카드들 (테두리를 더 어둡게 처리하여 흰색 영역이 완전히 노출되도록 보강) -->
                 <div class="lg:col-span-7 flex flex-col justify-between">
                     <div class="mb-4">
-                        <h4 class="text-lg font-bold text-olive-800 mb-1">우리가 직접 마케팅할 프리미엄 라인업</h4>
-                        <p class="text-sm text-gray-600">각 제품의 타겟층과 마케팅 포인트를 매칭해 보세요.</p>
+                        <h4 class="text-lg font-extrabold text-olive-800 mb-1">우리가 직접 마케팅할 프리미엄 라인업</h4>
+                        <p class="text-sm text-gray-700 font-medium">각 제품의 타겟층과 마케팅 포인트를 매칭해 보세요.</p>
                     </div>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <!-- 상품 1 -->
-                        <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm hover-card flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border border-emerald-100">🌿</div>
+                        <div class="bg-white p-5 rounded-2xl border-2 border-gray-300 shadow-md hover-card flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border-2 border-emerald-200">🌿</div>
                             <div>
-                                <h5 class="font-bold text-gray-900 text-sm md:text-base">엑스트라버진 올리브오일(유기농)</h5>
-                                <p class="text-xs text-gray-600 mt-1 leading-relaxed">아침 루틴 오일풀링용 및 신선한 샐러드 드레싱용 생식 오일</p>
+                                <h5 class="font-black text-gray-950 text-sm md:text-base">엑스트라버진 올리브오일(유기농)</h5>
+                                <p class="text-xs text-gray-700 mt-1.5 leading-relaxed font-medium">아침 루틴 오일풀링용 및 신선한 샐러드 드레싱용 생식 오일</p>
                             </div>
                         </div>
                         
                         <!-- 상품 2 -->
-                        <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm hover-card flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border border-amber-100">🥑</div>
+                        <div class="bg-white p-5 rounded-2xl border-2 border-gray-300 shadow-md hover-card flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border-2 border-amber-200">🥑</div>
                             <div>
-                                <h5 class="font-bold text-gray-900 text-sm md:text-base">엑스트라버진 아보카도오일</h5>
-                                <p class="text-xs text-gray-600 mt-1 leading-relaxed">높은 발연점으로 튀김, 부침 요리에도 안심하고 쓰는 건강한 오일</p>
+                                <h5 class="font-black text-gray-950 text-sm md:text-base">엑스트라버진 아보카도오일</h5>
+                                <p class="text-xs text-gray-700 mt-1.5 leading-relaxed font-medium">높은 발연점으로 튀김, 부침 요리에도 안심하고 쓰는 건강한 오일</p>
                             </div>
                         </div>
 
                         <!-- 상품 3 -->
-                        <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm hover-card flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-900 flex items-center justify-center flex-shrink-0 text-xl font-bold border border-amber-200">🍇</div>
+                        <div class="bg-white p-5 rounded-2xl border-2 border-gray-300 shadow-md hover-card flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-900 flex items-center justify-center flex-shrink-0 text-xl font-bold border-2 border-amber-300">🍇</div>
                             <div>
-                                <h5 class="font-bold text-gray-900 text-sm md:text-base">발사믹 식초</h5>
-                                <p class="text-xs text-gray-600 mt-1 leading-relaxed">이탈리아 전통 방식을 살려 깊은 풍미와 새콤달콤한 맛을 더함</p>
+                                <h5 class="font-black text-gray-950 text-sm md:text-base">발사믹 식초</h5>
+                                <p class="text-xs text-gray-700 mt-1.5 leading-relaxed font-medium">이탈리아 전통 방식을 살려 깊은 풍미와 새콤달콤한 맛을 더함</p>
                             </div>
                         </div>
 
                         <!-- 상품 4 -->
-                        <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm hover-card flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-green-50 text-green-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border border-green-100">🌱</div>
+                        <div class="bg-white p-5 rounded-2xl border-2 border-gray-300 shadow-md hover-card flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-50 text-green-800 flex items-center justify-center flex-shrink-0 text-xl font-bold border-2 border-green-200">🌱</div>
                             <div>
-                                <h5 class="font-bold text-gray-900 text-sm md:text-base">유기농 대마종자유</h5>
-                                <p class="text-xs text-gray-600 mt-1 leading-relaxed">깐깐한 인증을 통과한 트렌디한 현대인 웰빙 이너뷰티 아이템</p>
+                                <h5 class="font-black text-gray-950 text-sm md:text-base">유기농 대마종자유</h5>
+                                <p class="text-xs text-gray-700 mt-1.5 leading-relaxed font-medium">깐깐한 인증을 통과한 트렌디한 현대인 웰빙 이너뷰티 아이템</p>
                             </div>
                         </div>
                     </div>
@@ -206,52 +206,52 @@
         </section>
 
         <!-- 섹션 2: 10주 프로젝트 로드맵 -->
-        <section class="mb-16 bg-olive-50 rounded-3xl p-6 md:p-10 border border-olive-100">
+        <section class="mb-16 bg-white rounded-3xl p-6 md:p-10 border-2 border-gray-300 shadow-lg">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-2">
-                        <div class="w-2 h-8 bg-olive-600 rounded-full"></div>
+                        <div class="w-3 h-8 bg-olive-600 rounded-full"></div>
                         <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">프로젝트 10주 로드맵</h2>
                     </div>
-                    <p class="text-sm text-olive-800 font-medium">단계를 클릭하여 주차별 목표와 결과물을 실시간으로 확인해 보세요.</p>
+                    <p class="text-sm text-gray-700 font-bold">단계를 클릭하여 주차별 목표와 결과물을 실시간으로 확인해 보세요.</p>
                 </div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-xl border border-olive-200 text-xs text-olive-800 font-bold self-start md:self-auto shadow-sm">
+                <div class="flex items-center gap-2 bg-olive-50 px-4 py-2 rounded-xl border-2 border-olive-200 text-xs text-olive-900 font-extrabold self-start md:self-auto shadow-sm">
                     <i class="fa-solid fa-circle-info text-olive-600"></i> 클릭 시 상세 내용이 연동됩니다
                 </div>
             </div>
 
-            <!-- 타임라인 인디케이터 (데스크톱 가로형) -->
+            <!-- 타임라인 인디케이터 (데스크톱 가로형 - 테두리를 어둡게 하여 버튼들을 뚜렷하게 노출) -->
             <div class="hidden md:grid grid-cols-6 gap-3 mb-8">
-                <button onclick="showStep(1)" id="btn-step-1" class="step-btn bg-olive-600 text-white p-4 rounded-2xl text-center font-bold text-sm shadow-md transition-all duration-200">
+                <button onclick="showStep(1)" id="btn-step-1" class="step-btn bg-olive-600 text-white p-4 rounded-2xl text-center font-bold text-sm shadow-md border-2 border-olive-700 transition-all duration-200">
                     <span class="block text-xs text-white font-bold mb-1">1주차</span>
                     ① 오리엔테이션
                 </button>
-                <button onclick="showStep(2)" id="btn-step-2" class="step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200">
-                    <span class="block text-xs text-olive-700 font-bold mb-1">2~3주차</span>
+                <button onclick="showStep(2)" id="btn-step-2" class="step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm">
+                    <span class="block text-xs text-olive-800 font-black mb-1">2~3주차</span>
                     ② 검색 키워드 분석
                 </button>
-                <button onclick="showStep(3)" id="btn-step-3" class="step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200">
-                    <span class="block text-xs text-olive-700 font-bold mb-1">4~5주차</span>
+                <button onclick="showStep(3)" id="btn-step-3" class="step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm">
+                    <span class="block text-xs text-olive-800 font-black mb-1">4~5주차</span>
                     ③ 포스팅 콘텐츠 기획
                 </button>
-                <button onclick="showStep(4)" id="btn-step-4" class="step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200">
-                    <span class="block text-xs text-olive-700 font-bold mb-1">6~7주차</span>
+                <button onclick="showStep(4)" id="btn-step-4" class="step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm">
+                    <span class="block text-xs text-olive-800 font-black mb-1">6~7주차</span>
                     ④ 숏폼 기획/제작
                 </button>
-                <button onclick="showStep(5)" id="btn-step-5" class="step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200">
-                    <span class="block text-xs text-olive-700 font-bold mb-1">8~9주차</span>
+                <button onclick="showStep(5)" id="btn-step-5" class="step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm">
+                    <span class="block text-xs text-olive-800 font-black mb-1">8~9주차</span>
                     ⑤ 스토어 기획전
                 </button>
-                <button onclick="showStep(6)" id="btn-step-6" class="step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200">
-                    <span class="block text-xs text-olive-700 font-bold mb-1">10주차</span>
+                <button onclick="showStep(6)" id="btn-step-6" class="step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm">
+                    <span class="block text-xs text-olive-800 font-black mb-1">10주차</span>
                     ⑥ 최종 발표
                 </button>
             </div>
 
             <!-- 모바일용 셀렉트 박스 -->
             <div class="block md:hidden mb-6">
-                <label for="mobile-step-select" class="block text-xs font-bold text-olive-800 mb-2">원하시는 단계를 선택해 보세요</label>
-                <select id="mobile-step-select" onchange="showStep(this.value)" class="w-full bg-white border border-olive-300 rounded-xl px-4 py-3 text-sm font-bold text-olive-900 focus:outline-none focus:ring-2 focus:ring-olive-600">
+                <label for="mobile-step-select" class="block text-xs font-bold text-gray-800 mb-2">원하시는 단계를 선택해 보세요</label>
+                <select id="mobile-step-select" onchange="showStep(this.value)" class="w-full bg-gray-50 border-2 border-gray-300 rounded-xl px-4 py-3 text-sm font-bold text-gray-900 focus:outline-none focus:ring-2 focus:ring-olive-600">
                     <option value="1">1주차: ① 오리엔테이션</option>
                     <option value="2">2~3주차: ② 검색 키워드 분석 (SEO)</option>
                     <option value="3">4~5주차: ③ 포스팅 콘텐츠 기획 및 제작</option>
@@ -261,12 +261,12 @@
                 </select>
             </div>
 
-            <!-- 로드맵 디테일 박스 -->
-            <div id="step-detail-container" class="bg-white rounded-3xl p-6 md:p-8 border border-olive-100 shadow-sm transition-all duration-300">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 pb-4 mb-6 gap-3">
-                    <span id="detail-week" class="inline-block bg-olive-600 text-white font-bold px-3 py-1 rounded-lg text-sm">1주차</span>
-                    <h3 id="detail-title" class="text-xl md:text-2xl font-bold text-gray-900 flex-1 md:ml-4">① 오리엔테이션</h3>
-                    <div class="flex items-center gap-2 text-olive-700 bg-olive-100 px-3 py-1.5 rounded-lg text-xs font-bold border border-olive-200">
+            <!-- 로드맵 디테일 박스 (바탕 회색에 맞춰 테두리 명도 보완) -->
+            <div id="step-detail-container" class="bg-gray-50 rounded-3xl p-6 md:p-8 border-2 border-gray-250 shadow-inner transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-gray-200 pb-4 mb-6 gap-3">
+                    <span id="detail-week" class="inline-block bg-olive-600 text-white font-bold px-3 py-1 rounded-lg text-sm border border-olive-700">1주차</span>
+                    <h3 id="detail-title" class="text-xl md:text-2xl font-black text-gray-900 flex-1 md:ml-4">① 오리엔테이션</h3>
+                    <div class="flex items-center gap-2 text-olive-900 bg-olive-100 px-3 py-1.5 rounded-lg text-xs font-black border-2 border-olive-200">
                         <i class="fa-regular fa-file-alt"></i> 산출물: <span id="detail-deliverable">회의록 작성</span>
                     </div>
                 </div>
@@ -274,13 +274,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">어떤 활동을 하나요?</h4>
-                        <p id="detail-description" class="text-gray-700 text-sm md:text-base leading-relaxed">
+                        <p id="detail-description" class="text-gray-800 text-sm md:text-base leading-relaxed font-medium">
                             매칭된 기업인 프레스티크 주식회사의 상세한 소개 및 판매 제품군에 대한 탐색 시간입니다. 마케팅 시 꼭 명심해야 할 식약처 법적 기준 및 가이드라인과 마케팅 방향성에 대한 기업의 디렉션을 귀담아듣습니다.
                         </p>
                     </div>
-                    <div class="bg-gray-50 rounded-2xl p-5 border border-gray-250">
+                    <div class="bg-white rounded-2xl p-5 border-2 border-gray-300 shadow-sm">
                         <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">미션 성공 체크리스트</h4>
-                        <ul id="detail-bullets" class="space-y-2.5 text-xs md:text-sm text-gray-700">
+                        <ul id="detail-bullets" class="space-y-2.5 text-xs md:text-sm text-gray-800 font-semibold">
                             <!-- JS를 통해 동적 생성 -->
                         </ul>
                     </div>
@@ -291,79 +291,79 @@
         <!-- 섹션 3: 마케팅 법적 주의사항 (가이드라인) -->
         <section class="mb-16">
             <div class="flex items-center gap-3 mb-4">
-                <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                <div class="w-3 h-8 bg-red-600 rounded-full"></div>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">⚠️ 식품 마케팅 시 법적 리스크 관리</h2>
             </div>
             
-            <p class="text-sm md:text-base text-gray-700 mb-8 leading-relaxed max-w-3xl">
-                프레스티크의 오일 및 식초 제품군은 최상위 품질을 지녔으나, 식약처법상 <strong class="text-gray-900 underline">'건강기능식품(건기식)'이나 '의약품'이 아닌 '가공식품'</strong>으로 분류됩니다. 따라서 건강에 과도하게 초점을 맞춘 광고 및 마케팅은 제재 대상이 될 수 있습니다.
+            <p class="text-sm md:text-base text-gray-800 mb-8 leading-relaxed max-w-3xl font-medium">
+                프레스티크의 오일 및 식초 제품군은 최상위 품질을 지녔으나, 식약처법상 <strong class="text-red-700 underline font-black">'건강기능식품(건기식)'이나 '의약품'이 아닌 '가공식품'</strong>으로 분류됩니다. 따라서 건강에 과도하게 초점을 맞춘 광고 및 마케팅은 제재 대상이 될 수 있습니다.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 금지 사항 (Red Card) -->
-                <div class="bg-red-50 rounded-3xl p-6 md:p-8 border border-red-200 flex flex-col justify-between">
+                <!-- 금지 사항 (Red Card - 대비 선명화) -->
+                <div class="bg-red-50 rounded-3xl p-6 md:p-8 border-2 border-red-300 shadow-md flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-3 mb-6">
-                            <span class="w-10 h-10 rounded-2xl bg-red-100 text-red-700 flex items-center justify-center text-xl font-black border border-red-200">❌</span>
+                            <span class="w-10 h-10 rounded-2xl bg-red-100 text-red-800 flex items-center justify-center text-xl font-black border-2 border-red-300">❌</span>
                             <div>
-                                <h3 class="font-extrabold text-red-900 text-lg">질병 치료·예방 오인 문구 금지</h3>
-                                <p class="text-xs text-red-800 font-bold">의학적 효과나 건기식으로 착각하게 하는 문구 금지</p>
+                                <h3 class="font-black text-red-950 text-lg">질병 치료·예방 오인 문구 금지</h3>
+                                <p class="text-xs text-red-900 font-bold">의학적 효과나 건기식으로 착각하게 하는 문구 금지</p>
                             </div>
                         </div>
 
                         <div class="space-y-4">
-                            <div class="bg-white p-4 rounded-2xl border border-red-200 shadow-sm">
-                                <span class="text-xs font-bold text-red-700 block mb-1">❌ 질병 치료 예방 예시 (금지)</span>
-                                <p class="text-sm text-gray-900 font-bold">"항암 효과", "당뇨 예방", "염증 완화", "심혈관 질환 개선"</p>
+                            <div class="bg-white p-4 rounded-2xl border-2 border-red-200 shadow-sm">
+                                <span class="text-xs font-bold text-red-750 block mb-1">❌ 질병 치료 예방 예시 (금지)</span>
+                                <p class="text-sm text-gray-950 font-extrabold">"항암 효과", "당뇨 예방", "염증 완화", "심혈관 질환 개선"</p>
                             </div>
-                            <div class="bg-white p-4 rounded-2xl border border-red-200 shadow-sm">
-                                <span class="text-xs font-bold text-red-700 block mb-1">❌ 기능식품 오인 예시 (금지)</span>
-                                <p class="text-sm text-gray-900 font-bold">"피로 회복", "체지방 감소/다이어트 효과", "면역력 증강"</p>
+                            <div class="bg-white p-4 rounded-2xl border-2 border-red-200 shadow-sm">
+                                <span class="text-xs font-bold text-red-750 block mb-1">❌ 기능식품 오인 예시 (금지)</span>
+                                <p class="text-sm text-gray-950 font-extrabold">"피로 회복", "체지방 감소/다이어트 효과", "면역력 증강"</p>
                             </div>
-                            <div class="bg-white p-4 rounded-2xl border border-red-200 shadow-sm">
-                                <span class="text-xs font-bold text-red-700 block mb-1">❌ 원료 정보 우회 마케팅 금지 (금지)</span>
-                                <p class="text-sm text-gray-700 leading-relaxed font-medium">
+                            <div class="bg-white p-4 rounded-2xl border-2 border-red-200 shadow-sm">
+                                <span class="text-xs font-bold text-red-750 block mb-1">❌ 원료 정보 우회 마케팅 금지 (금지)</span>
+                                <p class="text-sm text-gray-800 leading-relaxed font-bold">
                                     "대마종자유 속 성분이 염증 완화에 아주 탁월하대요. 그래서 저희 제품을 먹어보니.." 등 원료 효능 정보를 이용한 우회 홍보도 동일 위반 대상입니다.
                                 </p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="mt-6 bg-red-100 p-4 rounded-2xl text-xs text-red-950 leading-relaxed font-bold border border-red-200">
+                    <div class="mt-6 bg-red-100 p-4 rounded-2xl text-xs text-red-950 leading-relaxed font-extrabold border border-red-300">
                         ⚠️ 개인의 바이럴 후기 포스팅 및 인스타 릴스 자막에도 해당 법률이 엄격히 적용되니 콘텐츠 제작 전 반드시 체크하세요!
                     </div>
                 </div>
 
-                <!-- 권장 사항 (Green Card) -->
-                <div class="bg-emerald-50 rounded-3xl p-6 md:p-8 border border-emerald-200 flex flex-col justify-between">
+                <!-- 권장 사항 (Green Card - 대비 선명화) -->
+                <div class="bg-emerald-50 rounded-3xl p-6 md:p-8 border-2 border-emerald-300 shadow-md flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-3 mb-6">
-                            <span class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl font-black border border-emerald-200">⭕</span>
+                            <span class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl font-black border-2 border-emerald-300">⭕</span>
                             <div>
-                                <h3 class="font-extrabold text-emerald-900 text-lg">풍미·라이프스타일 가치 제안</h3>
-                                <p class="text-xs text-emerald-800 font-bold">식품 본연의 맛, 고급스러운 한 끼 분위기에 집중하기</p>
+                                <h3 class="font-black text-emerald-950 text-lg">풍미·라이프스타일 가치 제안</h3>
+                                <p class="text-xs text-emerald-900 font-bold">식품 본연의 맛, 고급스러운 한 끼 분위기에 집중하기</p>
                             </div>
                         </div>
 
                         <div class="space-y-4">
-                            <div class="bg-white p-4 rounded-2xl border border-emerald-200 shadow-sm">
-                                <span class="text-xs font-bold text-emerald-700 block mb-1">⭕ 맛과 풍미의 텍스처 묘사 (권장)</span>
-                                <p class="text-sm text-gray-900 font-bold">"입안에 퍼지는 풀 향과 특유의 알싸한 마무리감"</p>
+                            <div class="bg-white p-4 rounded-2xl border-2 border-emerald-200 shadow-sm">
+                                <span class="text-xs font-bold text-emerald-800 block mb-1">⭕ 맛과 풍미의 텍스처 묘사 (권장)</span>
+                                <p class="text-sm text-gray-950 font-extrabold">"입안에 퍼지는 풀 향과 특유의 알싸한 마무리감"</p>
                             </div>
-                            <div class="bg-white p-4 rounded-2xl border border-emerald-200 shadow-sm">
-                                <span class="text-xs font-bold text-emerald-700 block mb-1">⭕ 트렌디한 라이프스타일 결합 (권장)</span>
-                                <p class="text-sm text-gray-900 font-bold">"나를 사랑하는 가벼운 아침 습관, 오일 풀링 루틴"</p>
+                            <div class="bg-white p-4 rounded-2xl border-2 border-emerald-200 shadow-sm">
+                                <span class="text-xs font-bold text-emerald-800 block mb-1">⭕ 트렌디한 라이프스타일 결합 (권장)</span>
+                                <p class="text-sm text-gray-900 font-extrabold">"나를 사랑하는 가벼운 아침 습관, 오일 풀링 루틴"</p>
                             </div>
-                            <div class="bg-white p-4 rounded-2xl border border-emerald-200 shadow-sm">
-                                <span class="text-xs font-bold text-emerald-700 block mb-1">⭕ 고품격 식탁 및 드레싱 레시피 (권장)</span>
-                                <p class="text-sm text-gray-700 leading-relaxed font-medium">
+                            <div class="bg-white p-4 rounded-2xl border-2 border-emerald-200 shadow-sm">
+                                <span class="text-xs font-bold text-emerald-800 block mb-1">⭕ 고품격 식탁 및 드레싱 레시피 (권장)</span>
+                                <p class="text-sm text-gray-800 leading-relaxed font-bold">
                                     키토제닉(저탄고지) 라이프스타일에 맞춘 다이어트 보조가 아닌, 일상적인 식문화 트렌드로 접근 시 자연스럽게 구매 욕구를 자극합니다.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-6 bg-emerald-100 p-4 rounded-2xl text-xs text-emerald-950 leading-relaxed font-bold border border-emerald-200">
+                    <div class="mt-6 bg-emerald-100 p-4 rounded-2xl text-xs text-emerald-950 leading-relaxed font-extrabold border border-emerald-300">
                         💡 "의약품처럼 파는 시대는 끝났습니다. 세련되고 건강한 영감(Inspiration)을 주는 웰빙 마케터로 활약해 주시기 바랍니다."
                     </div>
                 </div>
@@ -394,8 +394,8 @@
                 </div>
 
                 <!-- 탭 메뉴 스위처 -->
-                <div class="grid grid-cols-2 gap-2 bg-olive-950 p-1.5 rounded-2xl max-w-md mb-8 border border-white/10">
-                    <button onclick="switchAiTab('generator')" id="tab-btn-generator" class="py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-850 text-white shadow-sm border border-white/5">
+                <div class="grid grid-cols-2 gap-2 bg-olive-950 p-1.5 rounded-2xl max-w-md mb-8 border border-white/20 shadow-md">
+                    <button onclick="switchAiTab('generator')" id="tab-btn-generator" class="py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-850 text-white shadow-sm border border-white/10">
                         <i class="fa-solid fa-feather-pointed mr-1.5 text-gold-500"></i> AI 카피·대본 생성기
                     </button>
                     <button onclick="switchAiTab('checker')" id="tab-btn-checker" class="py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 text-olive-200 hover:text-white">
@@ -408,7 +408,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <label class="block text-xs font-extrabold text-olive-100 mb-2 uppercase tracking-wider">1. 타겟 제품 선택</label>
-                            <select id="ai-gen-product" class="w-full bg-olive-800 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-olive-300 focus:outline-none cursor-pointer font-medium">
+                            <select id="ai-gen-product" class="w-full bg-olive-800 border border-white/30 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-olive-300 focus:outline-none cursor-pointer font-bold shadow-md">
                                 <option value="엑스트라버진 올리브오일">🌿 엑스트라버진 올리브오일 (오일풀링, 지중해식단)</option>
                                 <option value="아보카도오일">🥑 프리미엄 아보카도오일 (높은발연점, 키토제닉)</option>
                                 <option value="유기농 대마종자유">🌱 유기농 대마종자유 (이너뷰티, 불포화지방산)</option>
@@ -418,7 +418,7 @@
                         </div>
                         <div>
                             <label class="block text-xs font-extrabold text-olive-100 mb-2 uppercase tracking-wider">2. 마케팅 채널 포맷</label>
-                            <select id="ai-gen-format" class="w-full bg-olive-800 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-olive-300 focus:outline-none cursor-pointer font-medium">
+                            <select id="ai-gen-format" class="w-full bg-olive-800 border border-white/30 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-olive-300 focus:outline-none cursor-pointer font-bold shadow-md">
                                 <option value="인스타그램 릴스 숏폼 스토리보드 대본 (60초 이내)">🎥 인스타그램 릴스 대본 (비주얼 연출 포함)</option>
                                 <option value="네이버 블로그 리뷰형 본문 초안">✍️ 네이버 블로그 체험단 스타일 리뷰</option>
                                 <option value="스마트스토어 메인 기획전 헤드카피 & 슬로건">🛒 쇼핑몰 기획전 메인 문구 및 패키지 카피</option>
@@ -426,11 +426,11 @@
                         </div>
                         <div>
                             <label class="block text-xs font-extrabold text-olive-100 mb-2 uppercase tracking-wider">3. 추가 키워드 / 무드 (선택)</label>
-                            <input type="text" id="ai-gen-keyword" placeholder="예: 아침 공복, 홈쿡 레시피, 2030 감성" class="w-full bg-olive-800 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder-white/50 focus:ring-2 focus:ring-olive-300 focus:outline-none font-medium">
+                            <input type="text" id="ai-gen-keyword" placeholder="예: 아침 공복, 홈쿡 레시피, 2030 감성" class="w-full bg-olive-800 border border-white/30 rounded-xl px-4 py-3 text-sm text-white placeholder-white/55 focus:ring-2 focus:ring-olive-300 focus:outline-none font-bold shadow-md">
                         </div>
                     </div>
 
-                    <button onclick="generateAiCopy()" id="btn-ai-generate" class="w-full md:w-auto bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-olive-950 font-black px-8 py-4 rounded-xl text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                    <button onclick="generateAiCopy()" id="btn-ai-generate" class="w-full md:w-auto bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-olive-950 font-black px-8 py-4 rounded-xl text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2 border border-gold-600">
                         <i class="fa-solid fa-wand-magic-sparkles"></i> 카피라이팅 기획안 생성하기
                     </button>
                 </div>
@@ -441,34 +441,34 @@
                         <label class="block text-xs font-extrabold text-olive-100 mb-2 uppercase tracking-wider">
                             체크할 광고 원고 초안 작성 (질병/기능성 언급 시 검출)
                         </label>
-                        <p class="text-xs text-olive-200 mb-3 font-medium">
+                        <p class="text-xs text-olive-200 mb-3 font-bold">
                             직접 작성한 블로그 타이틀, 인스타 본문 혹은 키워드 아이디어를 아래에 적어보세요. 식약처 리스크를 자동 탐지합니다.
                         </p>
-                        <textarea id="ai-check-input" rows="4" placeholder="작성 예시: 프레스티크 대마종자유는 체내 염증 완화와 당뇨 예방에 큰 효능이 있어 피로회복 다이어트용으로 최고예요." class="w-full bg-olive-800 border border-white/20 rounded-2xl p-4 text-sm text-white placeholder-white/45 focus:ring-2 focus:ring-olive-300 focus:outline-none resize-none font-medium"></textarea>
+                        <textarea id="ai-check-input" rows="4" placeholder="작성 예시: 프레스티크 대마종자유는 체내 염증 완화와 당뇨 예방에 큰 효능이 있어 피로회복 다이어트용으로 최고예요." class="w-full bg-olive-800 border border-white/30 rounded-2xl p-4 text-sm text-white placeholder-white/50 focus:ring-2 focus:ring-olive-300 focus:outline-none resize-none font-bold shadow-md"></textarea>
                     </div>
 
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="setCheckerSample()" class="text-xs font-bold bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors border border-white/15 text-white">
+                        <button onclick="setCheckerSample()" class="text-xs font-extrabold bg-white/10 hover:bg-white/20 px-3.5 py-2 rounded-lg transition-colors border border-white/20 text-white shadow-sm">
                             💡 예비 법적위반 예제 불러오기
                         </button>
                     </div>
 
-                    <button onclick="checkAiCompliance()" id="btn-ai-check" class="w-full md:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-black px-8 py-4 rounded-xl text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                    <button onclick="checkAiCompliance()" id="btn-ai-check" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-black px-8 py-4 rounded-xl text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2 border border-emerald-700">
                         <i class="fa-solid fa-magnifying-glass-chart"></i> 법적 리스크 정밀 검사 개시
                     </button>
                 </div>
 
-                <!-- 결과 출력 창 (가독성 강화를 위해 밝은 배경의 흰색 책 느낌으로 교체) -->
-                <div id="ai-result-panel" class="mt-8 bg-white rounded-2xl border border-olive-200 p-5 md:p-6 hidden transition-all duration-300 shadow-2xl">
-                    <div class="flex items-center justify-between border-b border-gray-100 pb-4 mb-4">
-                        <div class="flex items-center gap-2 text-olive-700">
-                            <span class="flex h-2.5 w-2.5 relative">
+                <!-- 결과 출력 창 (경계선 테두리를 더 짙게 처리하여 묻힘 방지) -->
+                <div id="ai-result-panel" class="mt-8 bg-white rounded-2xl border-4 border-olive-300 p-5 md:p-6 hidden transition-all duration-300 shadow-2xl">
+                    <div class="flex items-center justify-between border-b-2 border-gray-100 pb-4 mb-4">
+                        <div class="flex items-center gap-2 text-olive-800">
+                            <span class="flex h-3 w-3 relative">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-olive-500 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-olive-600"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-olive-600"></span>
                             </span>
-                            <span class="text-xs font-extrabold uppercase tracking-widest text-olive-800">AI 실시간 분석 결과 리포트</span>
+                            <span class="text-xs font-black uppercase tracking-widest text-olive-900">AI 실시간 분석 결과 리포트</span>
                         </div>
-                        <button onclick="copyAiResult()" class="text-xs text-olive-800 bg-olive-100 hover:bg-olive-200 font-bold px-3.5 py-2 rounded-lg flex items-center gap-1.5 transition-colors border border-olive-200">
+                        <button onclick="copyAiResult()" class="text-xs text-olive-900 bg-olive-100 hover:bg-olive-200 font-extrabold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition-colors border-2 border-olive-200">
                             <i id="copy-btn-icon" class="fa-regular fa-clone"></i> <span id="copy-btn-text">전체 복사</span>
                         </button>
                     </div>
@@ -476,11 +476,11 @@
                     <!-- 실제 로딩 애니메이션 -->
                     <div id="ai-loading" class="py-12 flex flex-col items-center justify-center gap-3">
                         <div class="w-10 h-10 border-4 border-olive-200 border-t-olive-600 rounded-full animate-spin"></div>
-                        <p class="text-xs text-olive-800 animate-pulse font-bold">Gemini AI 마케팅 가이드 분석 중...</p>
+                        <p class="text-xs text-olive-900 animate-pulse font-black">Gemini AI 마케팅 가이드 분석 중...</p>
                     </div>
 
-                    <!-- 텍스트 디스플레이 영역 (검정 글씨의 확실한 대비로 변경) -->
-                    <div id="ai-text-output" class="text-sm leading-relaxed text-gray-900 font-medium whitespace-pre-wrap select-text max-h-[380px] overflow-y-auto pr-2">
+                    <!-- 텍스트 디스플레이 영역 (검정 글씨의 확실한 대비 확보) -->
+                    <div id="ai-text-output" class="text-sm leading-relaxed text-gray-900 font-bold whitespace-pre-wrap select-text max-h-[380px] overflow-y-auto pr-2">
                         <!-- 동적 채워짐 -->
                     </div>
                 </div>
@@ -489,78 +489,78 @@
 
         <!-- 섹션 4: 참여 혜택 및 미션 체크리스트 -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-            <!-- 참여 혜택 (7/12) -->
-            <div class="lg:col-span-7 bg-white p-6 md:p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col justify-between">
+            <!-- 참여 혜택 (7/12 - 경계 명도 보정) -->
+            <div class="lg:col-span-7 bg-white p-6 md:p-8 rounded-3xl border-2 border-gray-300 shadow-lg flex flex-col justify-between">
                 <div>
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-2 h-8 bg-gold-500 rounded-full"></div>
+                        <div class="w-3 h-8 bg-gold-500 rounded-full"></div>
                         <h2 class="text-2xl font-extrabold text-gray-900">🎁 참여 학생들만의 든든한 혜택</h2>
                     </div>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="p-4 rounded-2xl bg-gray-50 border border-gray-200">
+                        <div class="p-4 rounded-2xl bg-gray-50 border-2 border-gray-250">
                             <div class="text-xl mb-1">💼</div>
-                            <h4 class="font-bold text-gray-900 text-sm">진짜 실무 마케팅 경험</h4>
-                            <p class="text-xs text-gray-600 mt-1 leading-relaxed">SEO 기획, 숏폼 편집, 광고전 카피라이팅 기획까지 전 과정 주도</p>
+                            <h4 class="font-extrabold text-gray-950 text-sm">진짜 실무 마케팅 경험</h4>
+                            <p class="text-xs text-gray-800 mt-1 leading-relaxed font-semibold">SEO 기획, 숏폼 편집, 광고전 카피라이팅 기획까지 전 과정 주도</p>
                         </div>
-                        <div class="p-4 rounded-2xl bg-gray-50 border border-gray-200">
+                        <div class="p-4 rounded-2xl bg-gray-50 border-2 border-gray-250">
                             <div class="text-xl mb-1">☕</div>
-                            <h4 class="font-bold text-gray-900 text-sm">대면 회의 시 무제한 간식</h4>
-                            <p class="text-xs text-gray-600 mt-1 leading-relaxed">대면 피드백 및 기획 모임 진행 시 다과 및 든든한 식사 제공</p>
+                            <h4 class="font-extrabold text-gray-950 text-sm">대면 회의 시 무제한 간식</h4>
+                            <p class="text-xs text-gray-800 mt-1 leading-relaxed font-semibold">대면 피드백 및 기획 모임 진행 시 다과 및 든든한 식사 제공</p>
                         </div>
-                        <div class="p-4 rounded-2xl bg-gray-50 border border-gray-200">
+                        <div class="p-4 rounded-2xl bg-gray-50 border-2 border-gray-250">
                             <div class="text-xl mb-1">🎁</div>
-                            <h4 class="font-bold text-gray-900 text-sm">최종 프레스티크 기프트</h4>
-                            <p class="text-xs text-gray-600 mt-1 leading-relaxed">10주 프로젝트 성료 시 감사의 마음을 담은 자사 선물 세트 증정</p>
+                            <h4 class="font-extrabold text-gray-950 text-sm">최종 프레스티크 기프트</h4>
+                            <p class="text-xs text-gray-800 mt-1 leading-relaxed font-semibold">10주 프로젝트 성료 시 감사의 마음을 담은 자사 선물 세트 증정</p>
                         </div>
-                        <div class="p-4 rounded-2xl bg-gray-50 border border-gray-200">
+                        <div class="p-4 rounded-2xl bg-gray-50 border-2 border-gray-250">
                             <div class="text-xl mb-1">📝</div>
-                            <h4 class="font-bold text-gray-900 text-sm">포트폴리오 영구 활용</h4>
-                            <p class="text-xs text-gray-600 mt-1 leading-relaxed">실제로 배포 및 기획한 마케팅 성과를 자신있게 이력서에 박제 가능</p>
+                            <h4 class="font-extrabold text-gray-950 text-sm">포트폴리오 영구 활용</h4>
+                            <p class="text-xs text-gray-800 mt-1 leading-relaxed font-semibold">실제로 배포 및 기획한 마케팅 성과를 자신있게 이력서에 박제 가능</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="border-t border-gray-100 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div class="text-xs text-gray-500 font-bold">
+                <div class="border-t-2 border-gray-200 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="text-xs text-gray-650 font-black">
                         * 본 혜택은 우수 활동 시 상시 추가 및 연장될 수 있습니다.
                     </div>
                 </div>
             </div>
 
-            <!-- 미션 체크리스트 (5/12) -->
-            <div class="lg:col-span-5 bg-olive-900 text-white p-6 md:p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+            <!-- 미션 체크리스트 (5/12 - 경계선 및 텍스트 선명도 수정) -->
+            <div class="lg:col-span-5 bg-olive-900 text-white p-6 md:p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between shadow-lg border-2 border-olive-950">
                 <!-- 원형 백그라운드 그라디언트 -->
                 <div class="absolute -top-10 -right-10 w-40 h-40 bg-olive-700/50 rounded-full blur-2xl"></div>
                 
                 <div class="relative z-10">
                     <h3 class="text-xl font-bold mb-1">📋 1차 OT 준비 체크리스트</h3>
-                    <p class="text-xs text-olive-200 mb-6 font-semibold">금요일 첫 만남을 더 유익하게 만드는 실시간 메모지</p>
+                    <p class="text-xs text-olive-100 mb-6 font-bold">금요일 첫 만남을 더 유익하게 만드는 실시간 메모지</p>
                     
                     <div class="space-y-3.5" id="checklist-wrapper">
                         <!-- 체크리스트 아이템들 -->
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/10 hover:bg-white/15 transition-all">
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/20 hover:bg-white/15 transition-all">
                             <input type="checkbox" id="check-1" class="w-4 h-4 rounded text-olive-600 focus:ring-olive-500 border-white/20 bg-transparent cursor-pointer">
-                            <label for="check-1" class="text-xs md:text-sm font-semibold cursor-pointer select-none">프레스티크 쇼핑몰 구경해 보기</label>
+                            <label for="check-1" class="text-xs md:text-sm font-bold cursor-pointer select-none">프레스티크 쇼핑몰 구경해 보기</label>
                         </div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/10 hover:bg-white/15 transition-all">
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/20 hover:bg-white/15 transition-all">
                             <input type="checkbox" id="check-2" class="w-4 h-4 rounded text-olive-600 focus:ring-olive-500 border-white/20 bg-transparent cursor-pointer">
-                            <label for="check-2" class="text-xs md:text-sm font-semibold cursor-pointer select-none">식약처 가공식품 표기 금지조항 확인해 두기</label>
+                            <label for="check-2" class="text-xs md:text-sm font-bold cursor-pointer select-none">식약처 가공식품 표기 금지조항 확인해 두기</label>
                         </div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/10 hover:bg-white/15 transition-all">
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/20 hover:bg-white/15 transition-all">
                             <input type="checkbox" id="check-3" class="w-4 h-4 rounded text-olive-600 focus:ring-olive-500 border-white/20 bg-transparent cursor-pointer">
-                            <label for="check-3" class="text-xs md:text-sm font-semibold cursor-pointer select-none">우대사항 활용 가능 프로그램 체크 (숏폼 편집 툴 등)</label>
+                            <label for="check-3" class="text-xs md:text-sm font-bold cursor-pointer select-none">우대사항 활용 가능 프로그램 체크 (숏폼 편집 툴 등)</label>
                         </div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/10 hover:bg-white/15 transition-all">
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl border border-white/20 hover:bg-white/15 transition-all">
                             <input type="checkbox" id="check-4" class="w-4 h-4 rounded text-olive-600 focus:ring-olive-500 border-white/20 bg-transparent cursor-pointer">
-                            <label for="check-4" class="text-xs md:text-sm font-semibold cursor-pointer select-none">대면 OT 진행 시간 및 산학협력관 호실 확인</label>
+                            <label for="check-4" class="text-xs md:text-sm font-bold cursor-pointer select-none">대면 OT 진행 시간 및 산학협력관 호실 확인</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="relative z-10 mt-8 pt-6 border-t border-white/15 flex items-center justify-between">
-                    <span class="text-xs text-olive-200 font-bold">함께 시작할 준비가 완료되었나요?</span>
-                    <button onclick="cheerUp()" class="bg-gold-500 hover:bg-gold-600 text-olive-950 font-extrabold px-4 py-1.5 rounded-xl text-xs transition-colors">
+                <div class="relative z-10 mt-8 pt-6 border-t-2 border-white/20 flex items-center justify-between">
+                    <span class="text-xs text-olive-100 font-bold">함께 시작할 준비가 완료되었나요?</span>
+                    <button onclick="cheerUp()" class="bg-gold-500 hover:bg-gold-600 text-olive-950 font-extrabold px-4 py-1.5 rounded-xl text-xs transition-colors border border-gold-600">
                         화이팅 전송! 🙌
                     </button>
                 </div>
@@ -568,21 +568,21 @@
         </section>
         
         <!-- 토스트 팝업 (알림 대용) -->
-        <div id="toast" class="fixed bottom-5 right-5 z-50 bg-olive-800 text-white px-6 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-olive-700 opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2">
+        <div id="toast" class="fixed bottom-5 right-5 z-50 bg-olive-800 text-white px-6 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-olive-750 opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2">
             <span class="text-lg">🎉</span>
-            <p id="toast-text" class="text-sm font-bold"></p>
+            <p id="toast-text" class="text-sm font-black"></p>
         </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 border-t border-gray-250 py-12 text-center text-gray-600 text-xs md:text-sm">
+    <footer class="bg-gray-200 border-t-2 border-gray-300 py-12 text-center text-gray-700 text-xs md:text-sm">
         <div class="max-w-6xl mx-auto px-4 space-y-3">
             <p class="font-extrabold text-gray-800 text-sm">단국대학교 창업보육센터 | 프레스티크 주식회사</p>
-            <p class="max-w-xl mx-auto text-gray-600 leading-relaxed font-medium">
-                본 웹페이지의 기획 일정, 제품 정보, 마케팅 전략 내용 등은 <span class="text-olive-700 font-bold">"(프레스티크 주식회사)입주기업x학생 프로젝트_신청서.pdf"</span> 파일 내용을 바탕으로 제작되었으며, 6기 산학협력 참여 학생들의 교육 및 가이드 제공 목적으로만 활용됩니다.
+            <p class="max-w-xl mx-auto text-gray-700 leading-relaxed font-bold">
+                본 웹페이지의 기획 일정, 제품 정보, 마케팅 전략 내용 등은 <span class="text-olive-800 font-extrabold underline">"(프레스티크 주식회사)입주기업x학생 프로젝트_신청서.pdf"</span> 파일 내용을 바탕으로 제작되었으며, 6기 산학협력 참여 학생들의 교육 및 가이드 제공 목적으로만 활용됩니다.
             </p>
-            <p class="text-gray-500 mt-6 font-bold">&copy; 2026 Dankook University & Prestique Co., Ltd. All rights reserved.</p>
+            <p class="text-gray-600 mt-6 font-bold">&copy; 2026 Dankook University & Prestique Co., Ltd. All rights reserved.</p>
         </div>
     </footer>
 
@@ -677,21 +677,21 @@
                 li.className = "flex items-start gap-2.5";
                 li.innerHTML = `
                     <span class="text-olive-600 mt-1"><i class="fa-solid fa-square-check"></i></span>
-                    <span class="leading-relaxed font-medium">${bullet}</span>
+                    <span class="leading-relaxed font-bold">${bullet}</span>
                 `;
                 bulletsContainer.appendChild(li);
             });
 
-            // 데스크톱 버튼 활성화 클래스 조절 (가독성 높은 검은 글씨 조합)
+            // 데스크톱 버튼 활성화 클래스 조절 (검정 글씨 조합에 어두운 테두리 적용)
             document.querySelectorAll('.step-btn').forEach(btn => {
-                btn.className = "step-btn bg-white hover:bg-olive-100 text-gray-800 p-4 rounded-2xl text-center font-bold text-sm border border-olive-200 transition-all duration-200";
+                btn.className = "step-btn bg-gray-50 hover:bg-olive-50 text-gray-900 p-4 rounded-2xl text-center font-bold text-sm border-2 border-gray-300 transition-all duration-200 shadow-sm";
                 const span = btn.querySelector('span');
-                if (span) span.className = "block text-xs text-olive-700 font-bold mb-1";
+                if (span) span.className = "block text-xs text-olive-800 font-black mb-1";
             });
 
             const activeBtn = document.getElementById(`btn-step-${stepId}`);
             if (activeBtn) {
-                activeBtn.className = "step-btn bg-olive-600 text-white p-4 rounded-2xl text-center font-bold text-sm shadow-md transition-all duration-200";
+                activeBtn.className = "step-btn bg-olive-600 text-white p-4 rounded-2xl text-center font-bold text-sm shadow-md border-2 border-olive-700 transition-all duration-200";
                 const activeSpan = activeBtn.querySelector('span');
                 if (activeSpan) activeSpan.className = "block text-xs text-white font-bold mb-1";
             }
@@ -741,12 +741,12 @@
             const checkerPane = document.getElementById('ai-pane-checker');
 
             if (tabName === 'generator') {
-                generatorBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-800 text-white shadow-sm border border-white/5";
+                generatorBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-800 text-white shadow-sm border border-white/10";
                 checkerBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 text-olive-200 hover:text-white";
                 generatorPane.classList.remove('hidden');
                 checkerPane.classList.add('hidden');
             } else {
-                checkerBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-800 text-white shadow-sm border border-white/5";
+                checkerBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 bg-olive-800 text-white shadow-sm border border-white/10";
                 generatorBtn.className = "py-3 px-4 rounded-xl text-xs md:text-sm font-bold text-center transition-all duration-300 text-olive-200 hover:text-white";
                 checkerPane.classList.remove('hidden');
                 generatorPane.classList.add('hidden');
