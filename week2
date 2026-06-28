@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[프레스티크 X 단국산학아카데미] 2~3주차 가이드북</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A880',
+                            golddark: '#A3845B',
+                            darkgreen: '#1E352F',
+                            lightgreen: '#EAEFE9',
+                            olive: '#5A6F54',
+                            charcoal: '#2D312E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Web Font & Icon -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            background-color: #F8F9FA;
+        }
+        @media print {
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-bg-white {
+                background-color: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-shadow: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .print-text-dark {
+                color: #1a1a1a !important;
+            }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #C5A880;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-brand-charcoal antialiased">
+
+    <!-- Top Bar (no-print) -->
+    <div class="no-print bg-brand-darkgreen text-white py-3 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="bg-brand-gold text-brand-darkgreen font-bold text-xs px-2.5 py-1 rounded-full">단국산학아카데미 6기</span>
+                <span class="text-sm text-brand-lightgreen font-medium">프레스티크 주식회사 주간 가이드</span>
+            </div>
+            <button onclick="window.print()" class="bg-brand-gold hover:bg-brand-golddark text-brand-darkgreen font-bold text-sm px-4 py-1.5 rounded shadow transition-all flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0/0/24/24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                PDF로 저장 / 인쇄하기
+            </button>
+        </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+        <!-- Header Document Header -->
+        <header class="border-b-2 border-brand-gold pb-8 mb-10 text-center sm:text-left relative">
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 mb-6">
+                <div>
+                    <p class="text-brand-gold font-bold tracking-wider text-sm uppercase mb-1">PRESTIQUE X DANKOOK UNIV.</p>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-darkgreen leading-tight">
+                        온라인 매출 극대화를 위한<br class="sm:hidden"> 2~3주차 가이드북
+                    </h1>
+                    <p class="text-gray-500 text-sm mt-2">대상: 단국산학아카데미 산학협력 프로젝트 학생 단원</p>
+                </div>
+                <!-- Brand Logo Placeholder (Elegant SVG) -->
+                <div class="flex flex-col items-center sm:items-end">
+                    <div class="w-16 h-16 rounded-full bg-brand-lightgreen flex items-center justify-center border border-brand-gold mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-olive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                        </svg>
+                    </div>
+                    <span class="font-bold text-xs text-brand-darkgreen tracking-widest uppercase">PRESTIQUE</span>
+                </div>
+            </div>
+
+            <!-- Intro Card -->
+            <div class="bg-brand-lightgreen/50 border-l-4 border-brand-olive p-5 rounded-r-lg mt-6 text-left">
+                <p class="text-sm text-brand-darkgreen font-semibold mb-2">안녕하세요, 프레스티크 주식회사 대표 정광원입니다.</p>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    1주차 오리엔테이션에서 유익한 시간 나누어 반가웠습니다. 본 프로젝트는 총 4명의 학생이 **각각 1개의 제품군을 전담하여 1인 프로젝트 형태**로 주도적으로 실행할 예정입니다 (숏폼 기획은 필요시 2명씩 협동 가능). 이번 2~3주차는 앞으로의 숏폼 및 콘텐츠 제작을 위한 가장 중요한 뿌리인 <strong class="text-brand-darkgreen">"SEO 기반 검색 키워드 분석"</strong> 단계입니다. 마케팅 전공이 아니어도 차근차근 해낼 수 있도록 친절한 시각 가이드를 준비했으니 기쁜 마음으로 동참해 주세요!
+                </p>
+            </div>
+        </header>
+
+        <!-- Section 1: SEO 101 -->
+        <section class="mb-12 print-bg-white bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-lg bg-brand-lightgreen flex items-center justify-center text-brand-olive font-bold">
+                    01
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold text-brand-darkgreen">SEO가 무엇이고 왜 중요한가요?</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Concept Card -->
+                <div class="border border-brand-lightgreen bg-brand-lightgreen/20 p-5 rounded-xl">
+                    <h3 class="text-brand-olive font-bold text-base mb-2 flex items-center gap-2">
+                        🔍 SEO (검색엔진최적화)란?
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        소비자들이 네이버, 구글, 다음, 쿠팡 등 검색창에 <strong>특정 단어</strong>를 검색했을 때, 우리 브랜드 제품과 마케팅 콘텐츠가 <span class="text-brand-darkgreen font-semibold underline decoration-brand-gold decoration-2">가장 첫 페이지 상단에 자연스럽게 노출되도록 설계</span>하는 과정입니다.
+                    </p>
+                </div>
+                <!-- Why Important Card -->
+                <div class="border border-brand-lightgreen bg-brand-lightgreen/20 p-5 rounded-xl">
+                    <h3 class="text-brand-olive font-bold text-base mb-2 flex items-center gap-2">
+                        💡 왜 지금 이것을 분석해야 하나요?
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        아무리 훌륭한 아보카도오일을 출시하고 감각적인 숏폼을 제작하더라도, 고객 검색 결과의 3~4페이지에 묻혀있다면 매출이 발생하지 않습니다. <strong class="text-brand-darkgreen">돈이 드는 유료 광고를 대체하여 상시적인 무료 고객 유입</strong>을 유도하는 최선의 마케팅 기술입니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SEO Customer Flow Visual Infographic -->
+            <div class="mt-8 pt-6 border-t border-gray-100">
+                <h4 class="text-sm font-bold text-brand-darkgreen mb-4 text-center">소비자의 구매 탐색 여정 (SEO 기반)</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <div class="text-brand-gold text-xs font-bold mb-1">STEP 1. 요구 발생</div>
+                        <p class="text-xs text-gray-500">"부모님 명절 선물 뭐하지?"<br>"샐러드 오일 건강한 게 있을까?"</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 relative">
+                        <div class="hidden sm:block absolute top-1/2 -right-2 transform -translate-y-1/2 text-brand-gold">➔</div>
+                        <div class="text-brand-gold text-xs font-bold mb-1">STEP 2. 키워드 검색</div>
+                        <p class="text-xs text-gray-500">포털 및 쇼핑몰에서<br><strong>'유기농 올리브오일', '오일 선물세트'</strong> 검색</p>
+                    </div>
+                    <div class="bg-brand-lightgreen/40 p-4 rounded-xl border border-brand-gold/30">
+                        <div class="text-brand-olive text-xs font-bold mb-1">STEP 3. 상단 노출 & 구매</div>
+                        <p class="text-xs text-brand-darkgreen font-medium">상위에 뜬 <strong>프레스티크 블로그/스토어</strong>를 발견해 신뢰를 얻고 구매</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 2nd Week Missions -->
+        <section class="mb-12 print-bg-white bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 page-break">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-lg bg-brand-lightgreen flex items-center justify-center text-brand-olive font-bold">
+                    02
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold text-brand-darkgreen">2주차 대면 미팅 전 개별 준비 미션 (3대 과제)</h2>
+            </div>
+            
+            <p class="text-sm text-gray-500 mb-6">
+                ※ 대면 미팅 전, 4명의 단원들은 다음 3가지 항목을 각자 전담할 제품군을 고려해 기초적인 자료 조사를 해와야 합니다. 완벽한 양식이 아니어도 좋으니 노트 필기, 메모, 엑셀 등으로 풍부하게 수집해 오세요!
+            </p>
+
+            <div class="space-y-6">
+                <!-- Mission 1 -->
+                <div class="border-l-4 border-brand-gold pl-4 py-1">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-brand-gold text-brand-darkgreen text-xs font-bold px-2 py-0.5 rounded">미션 1</span>
+                        <h3 class="text-base sm:text-lg font-bold text-brand-darkgreen">마케팅 제품군 및 선정 이유 확정</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">
+                        자사 대표 라인업 중 본인이 브랜드 매니저(BM)가 되어 담당해보고 싶은 제품을 선택하고, 그 이유를 서술해 봅니다.
+                    </p>
+                    <!-- Interactive Product Selector -->
+                    <div class="no-print mt-3 bg-gray-50 p-4 rounded-xl">
+                        <p class="text-xs font-bold text-brand-olive mb-2">💡 자사 주력 제품 리스트 (클릭 시 SEO 팁 제공)</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="product-selector-group">
+                            <button onclick="showProductTip('avocado')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🥑 아보카도오일</button>
+                            <button onclick="showProductTip('olive')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🫒 유기농 올리브오일</button>
+                            <button onclick="showProductTip('balsamic')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🍇 발사믹식초</button>
+                            <button onclick="showProductTip('hemp')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🌿 유기농 대마종자유</button>
+                            <button onclick="showProductTip('gift')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🎁 오일 선물세트</button>
+                        </div>
+                        <!-- Tip Display -->
+                        <div id="product-tip-box" class="mt-3 bg-brand-lightgreen/30 p-3 rounded-lg border border-brand-gold/30 hidden text-xs leading-relaxed text-brand-darkgreen">
+                            <strong id="product-tip-title" class="block mb-1 text-brand-olive"></strong>
+                            <span id="product-tip-desc"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission 2 -->
+                <div class="border-l-4 border-brand-gold pl-4 py-1">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-brand-gold text-brand-darkgreen text-xs font-bold px-2 py-0.5 rounded">미션 2</span>
+                        <h3 class="text-base sm:text-lg font-bold text-brand-darkgreen">검색 포털(네이버, 구글 등) 키워드 검색량 분석</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">
+                        네이버 검색광고(키워드 도구), 블랙키위, 네이버 데이터랩 등의 무료 툴을 사용해 본인이 정한 제품 카테고리의 <strong>'월간 검색량'</strong>을 직접 조회해 수집합니다.
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded-xl text-xs space-y-2 text-gray-600">
+                        <p class="font-bold text-brand-darkgreen">🛠 추천 무료 분석 툴</p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>네이버 광고 관리자 > 도구 > 키워드 도구:</strong> 가장 정밀한 공식 검색량 및 연령대 지표 획득 가능</li>
+                            <li><strong>블랙키위 (blackkiwi.net):</strong> 키워드의 경쟁 강도 및 연관 키워드를 한눈에 쉽게 분석 가능</li>
+                            <li><strong>네이버 데이터랩 (datalab.naver.com):</strong> 연간 검색 트렌드 흐름(시즌성) 분석</li>
+                        </ul>
+                    </div>
+
+                    <!-- Keyword Simulator (no-print) -->
+                    <div class="no-print mt-4 bg-brand-lightgreen/20 border border-brand-gold/30 p-4 rounded-xl">
+                        <p class="text-xs font-bold text-brand-olive mb-2">🖥️ 키워드 성격 판별 맛보기 시뮬레이터</p>
+                        <div class="flex gap-2">
+                            <input type="text" id="sim-keyword" placeholder="예: '올리브오일' 혹은 '유기농엑스트라버진올리브오일' 입력" class="flex-1 text-xs p-2.5 border border-gray-300 rounded focus:outline-none focus:border-brand-gold">
+                            <button onclick="simulateKeyword()" class="bg-brand-darkgreen hover:bg-brand-olive text-white text-xs font-bold px-4 py-2.5 rounded transition-all">조회 시뮬레이션</button>
+                        </div>
+                        <div id="sim-result" class="mt-3 text-xs hidden bg-white p-3 rounded border border-gray-100">
+                            <!-- JS Inject -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission 3 -->
+                <div class="border-l-4 border-brand-gold pl-4 py-1">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-brand-gold text-brand-darkgreen text-xs font-bold px-2 py-0.5 rounded">미션 3</span>
+                        <h3 class="text-base sm:text-lg font-bold text-brand-darkgreen">이커머스 쇼핑 플랫폼 내 연관/대표 키워드 추출</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">
+                        네이버 스마트스토어, 쿠팡, 마켓컬리 등의 이커머스 채널에서 소비자가 실제 어떤 연관검색어로 제품을 둘러보는지 수집합니다.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
+                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
+                                <span class="inline-block w-2 h-2 rounded-full bg-green-500"></span> 네이버 스마트스토어
+                            </div>
+                            <p class="text-[11px] text-gray-500">검색창 하단에 제시되는 쇼핑 연관검색어 및 상위 1~5위 상품명의 조합 키워드 분석</p>
+                        </div>
+                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
+                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
+                                <span class="inline-block w-2 h-2 rounded-full bg-red-500"></span> 쿠팡 (Coupang)
+                            </div>
+                            <p class="text-[11px] text-gray-500">검색 시 자동 완성어와 하단의 연관검색어 칩(Chip), 골드박스/기획전 판매 방식을 체크</p>
+                        </div>
+                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
+                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
+                                <span class="inline-block w-2 h-2 rounded-full bg-purple-500"></span> 마켓컬리 (Kurly)
+                            </div>
+                            <p class="text-[11px] text-gray-500">프리미엄 푸드 몰로서, 유기농/친환경 카테고리의 큐레이션 키워드와 후기 키워드 분석</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist Section (Interactive & motivational) -->
+        <section class="no-print mb-12 bg-brand-darkgreen text-white rounded-2xl p-6 sm:p-8 shadow-md">
+            <h3 class="text-lg font-bold text-brand-gold mb-2 flex items-center gap-2">
+                📋 대면 미팅 전 셀프 체크리스트
+            </h3>
+            <p class="text-xs text-brand-lightgreen/80 mb-6">대면 미팅 전까지 아래 리스트를 해결하며 체크해 보세요! 진행 상태바가 자동으로 늘어납니다.</p>
+
+            <div class="space-y-3">
+                <label class="flex items-start gap-3 bg-white/10 hover:bg-white/15 p-3 rounded-lg cursor-pointer transition-all">
+                    <input type="checkbox" onchange="updateProgress()" class="todo-chk mt-1 rounded text-brand-gold focus:ring-0">
+                    <div class="text-sm">
+                        <p class="font-semibold text-brand-lightgreen">[제품군 확정] 내가 담당할 제품 1가지를 명확히 골랐다.</p>
+                        <p class="text-xs text-white/60">선정 사유를 2~3줄 이내로 간단히 생각 완료함</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-3 bg-white/10 hover:bg-white/15 p-3 rounded-lg cursor-pointer transition-all">
+                    <input type="checkbox" onchange="updateProgress()" class="todo-chk mt-1 rounded text-brand-gold focus:ring-0">
+                    <div class="text-sm">
+                        <p class="font-semibold text-brand-lightgreen">[포털 키워드 검색량] 네이버/블랙키위에서 관련 월간 검색량을 5개 이상 기록했다.</p>
+                        <p class="text-xs text-white/60">메인 키워드(큰 볼륨)와 세부 키워드(특수 타겟) 구분 완료</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-3 bg-white/10 hover:bg-white/15 p-3 rounded-lg cursor-pointer transition-all">
+                    <input type="checkbox" onchange="updateProgress()" class="todo-chk mt-1 rounded text-brand-gold focus:ring-0">
+                    <div class="text-sm">
+                        <p class="font-semibold text-brand-lightgreen">[쇼핑 키워드] 쿠팡 또는 스마트스토어의 연관 검색어/인기 태그를 확보했다.</p>
+                        <p class="text-xs text-white/60">구매로 이어지는 직관적인 소비자의 쇼핑 키워드 정리</p>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="mt-6 pt-4 border-t border-white/10">
+                <div class="flex justify-between items-center text-xs text-brand-lightgreen mb-2">
+                    <span>미팅 사전 준비 완료도</span>
+                    <span id="progress-percent" class="font-bold text-brand-gold">0%</span>
+                </div>
+                <div class="w-full bg-white/10 h-2.5 rounded-full overflow-hidden">
+                    <div id="progress-bar" class="bg-brand-gold h-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: 2-3 Weeks Roadmap Timeline -->
+        <section class="mb-12 print-bg-white bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 page-break">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-lg bg-brand-lightgreen flex items-center justify-center text-brand-olive font-bold">
+                    03
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold text-brand-darkgreen">2~3주차 전체 타임라인 & 오프라인 미팅 흐름</h2>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-brand-lightgreen before:block">
+                <!-- Timeline Item 1 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-8">
+                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1.5 w-3.5 h-3.5 rounded-full bg-brand-gold border-2 border-white z-10"></div>
+                    <div class="w-full sm:w-[45%] pl-8 sm:pl-0 sm:text-right">
+                        <span class="bg-brand-gold/20 text-brand-darkgreen text-xs font-bold px-2.5 py-1 rounded-full">2주차 대면 미팅 전 (현재)</span>
+                        <h4 class="font-bold text-base text-brand-darkgreen mt-1">개별 데이터 수집 단계</h4>
+                        <p class="text-xs text-gray-500 mt-1">선호 제품군 분석, 포털/이커머스 검색량 데이터 정리 및 메모 작성</p>
+                    </div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-8">
+                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1.5 w-3.5 h-3.5 rounded-full bg-brand-olive border-2 border-white z-10"></div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                    <div class="w-full sm:w-[45%] pl-8">
+                        <span class="bg-brand-olive/20 text-brand-olive text-xs font-bold px-2.5 py-1 rounded-full">2주차 대면 미팅 당일</span>
+                        <h4 class="font-bold text-base text-brand-darkgreen mt-1">1차 방향 조율 및 피드백</h4>
+                        <p class="text-xs text-gray-500 mt-1">대표 피드백을 통해 4명의 전담 제품 영역 매칭을 최종 결정하고 수집 키워드의 정합성을 1:1 보완</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-8">
+                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1.5 w-3.5 h-3.5 rounded-full bg-brand-gold border-2 border-white z-10"></div>
+                    <div class="w-full sm:w-[45%] pl-8 sm:pl-0 sm:text-right">
+                        <span class="bg-brand-gold/20 text-brand-darkgreen text-xs font-bold px-2.5 py-1 rounded-full">2주차 미팅 이후 ~ 3주차 미팅 전</span>
+                        <h4 class="font-bold text-base text-brand-darkgreen mt-1">키워드 구체화 및 레퍼런스 수집</h4>
+                        <p class="text-xs text-gray-500 mt-1">4~9주차 포스팅/숏폼 기획에 활용할 우수한 벤치마킹 마케팅 사례(블로그, 릴스 등) 수집</p>
+                    </div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-8">
+                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1.5 w-3.5 h-3.5 rounded-full bg-brand-darkgreen border-2 border-white z-10"></div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                    <div class="w-full sm:w-[45%] pl-8">
+                        <span class="bg-brand-darkgreen text-white text-xs font-bold px-2.5 py-1 rounded-full">3주차 대면 미팅 당일</span>
+                        <h4 class="font-bold text-base text-brand-darkgreen mt-1">최종 분석 보고서 발표 및 공유</h4>
+                        <p class="text-xs text-gray-500 mt-1">개인별 [키워드 분석 및 마케팅 레퍼런스 수집 보고서 (자유 양식)] 발표 및 4주차 포스팅 제작 준비 돌입</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Support Card -->
+        <footer class="print-bg-white border-t border-brand-gold pt-8 text-center text-gray-500 text-xs">
+            <div class="bg-brand-lightgreen/30 p-6 rounded-xl border border-brand-lightgreen max-w-2xl mx-auto mb-6">
+                <p class="text-brand-darkgreen font-bold text-sm mb-1">🎁 열심히 준비해 주시는 단원분들을 위한 활동 혜택</p>
+                <p class="text-gray-600 leading-relaxed mb-3">
+                    대면 일정 참석 시 매주 맛있는 식사 및 다과를 부족하지 않게 대접하겠습니다.<br>
+                    또한 프로젝트 종료 후 여러분이 노력해주신 결과물은 포트폴리오에 적극 사용하실 수 있게 지원하며,<br>
+                    감사의 마음을 담아 자사 선물 세트도 한 가득 증정해 드릴 예정입니다.
+                </p>
+                <div class="w-16 h-0.5 bg-brand-gold mx-auto mb-3"></div>
+                <span class="text-xs text-brand-olive font-bold">궁금증이나 데이터 검색이 어려울 땐 주저 말고 편히 단톡방에 질문을 던져주세요!</span>
+            </div>
+            <p class="text-brand-darkgreen font-bold text-sm mb-1">프레스티크 주식회사 (산학협력관 425-J호실)</p>
+            <p class="mb-4">대표 정광원 (담당 연락처: 010-2094-7805)</p>
+            <p class="text-[10px] text-gray-400">© 2026 PRESTIQUE Co., Ltd. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JS Logic -->
+    <script>
+        // Product SEO Tips Data Object
+        const seoTips = {
+            avocado: {
+                title: "🥑 아보카도오일 핵심 SEO 가이드",
+                desc: "메인 키워드인 '아보카도 오일'은 대형 브랜드 경쟁이 강합니다. '저온압착 아보카도오일', '엑스트라버진 아보카도오일', '샐러드 다이어트 오일', '생식용 아보카도오일'처럼 요리법, 영양 정보와 관련된 세부 키워드를 노리는 것이 블로그 상위 노출 및 기획전 유입에 매우 효과적입니다."
+            },
+            olive: {
+                title: "🫒 유기농 올리브오일 핵심 SEO 가이드",
+                desc: "소비자들은 단순한 올리브오일보다 '유기농 엑스트라버진', '냉압착 올리브유' 같은 고급 건강 키워드를 구체적으로 찾아봅니다. '공복 아침 올리브오일', '올리브유 효능', '샐러드 드레싱 오일 추천' 등 웰빙 라이프스타일 검색 키워드를 타겟팅하면 큰 무기이자 숏폼 영상 아이디어가 됩니다."
+            },
+            balsamic: {
+                title: "🍇 발사믹식초 핵심 SEO 가이드",
+                desc: "발사믹식초는 단독 검색보다 '샐러드 소스 만들기', '발사믹 글레이즈 추천', '카프레제 소스' 등 구체적인 푸드 페어링 연관어가 핵심 구매 키워드입니다. 어떤 요리와 곁들이면 천상의 맛이 나는지 레시피형 세부 키워드를 확보하세요."
+            },
+            hemp: {
+                title: "🌿 유기농 대마종자유 핵심 SEO 가이드",
+                desc: "대마종자유는 식물성 불포화지방산 건강 기능이나 혈관 건강 관리를 위해 구매하는 고관여 제품입니다. '유기농 대마종자유 효능', '식물성 오일 영양제', '콜레스테롤 낮추는 기름', '햄프씨드오일 먹는 법' 등의 영양/기능 중심의 학술 및 지식 정보형 키워드를 모아보는 것이 핵심입니다."
+            },
+            gift: {
+                title: "🎁 오일 선물세트 핵심 SEO 가이드",
+                desc: "시즌성이 매우 뚜렷한 카테고리입니다. 설날이나 추석 명절 3~4주 전 검색량이 폭발하는 '명절 선물세트 추천', '부모님 오일 선물', '고급 패키지 식용유 세트', '2-3만원대 실속 건강선물' 등 가격대와 타겟, 명절 시즌을 조합한 시즌제 키워드를 적극 탐색해야 합니다."
+            }
+        };
+
+        // Show product tip function
+        function showProductTip(key) {
+            const tipBox = document.getElementById('product-tip-box');
+            const tipTitle = document.getElementById('product-tip-title');
+            const tipDesc = document.getElementById('product-tip-desc');
+            const buttons = document.querySelectorAll('.product-btn');
+
+            // Reset active states for button UI
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-lightgreen/50', 'border-brand-gold', 'text-brand-darkgreen');
+                btn.classList.add('bg-white', 'border-gray-200');
+            });
+
+            // Set clicked button state
+            event.currentTarget.classList.remove('bg-white', 'border-gray-200');
+            event.currentTarget.classList.add('bg-brand-lightgreen/50', 'border-brand-gold', 'text-brand-darkgreen');
+
+            if (seoTips[key]) {
+                tipTitle.innerText = seoTips[key].title;
+                tipDesc.innerText = seoTips[key].desc;
+                tipBox.classList.remove('hidden');
+            }
+        }
+
+        // Keyword Simulation Function
+        function simulateKeyword() {
+            const kw = document.getElementById('sim-keyword').value.trim();
+            const resultBox = document.getElementById('sim-result');
+
+            if (!kw) {
+                resultBox.innerHTML = "<p class='text-red-500 font-bold'>키워드를 입력해 주세요!</p>";
+                resultBox.classList.remove('hidden');
+                return;
+            }
+
+            let type = "세부 (롱테일) 키워드";
+            let volume = "상대적으로 작음 (월 300 ~ 2,000회)";
+            let strategy = "블로그 신규 글 작성 시 상위 노출 가능성이 매우 높고, 실제 구매 전환 목적의 진성 고객 유입에 특화되어 있습니다.";
+            let competition = "낮음 (도전 가치 높음)";
+
+            const mainKeywords = ['올리브오일', '아보카도오일', '발사믹식초', '대마종자유', '선물세트', '식용유', '올리브유', '아보카도유'];
+            
+            // Check if input keyword is close to main keywords
+            const isMain = mainKeywords.some(m => kw.replace(/\s+/g, '').includes(m) && kw.length <= 6);
+
+            if (isMain) {
+                type = "메인 키워드";
+                volume = "매우 큼 (월 15,000회 이상 대형 키워드)";
+                competition = "매우 높음 (대기업 광고 경쟁 치열)";
+                strategy = "검색 시장은 넓으나 이미 강력한 브랜드들이 선점 중입니다. 따라서 단독 노출보다는 반드시 '유기농', '보관방법' 등 서브 키워드를 조합하여 타겟층의 우회 입장을 설계해야 합니다.";
+            }
+
+            resultBox.innerHTML = `
+                <div class="border-l-4 border-brand-gold pl-3 py-1 space-y-1">
+                    <p class="font-bold text-sm text-brand-darkgreen">입력 키워드: "${kw}"</p>
+                    <p class="text-xs"><strong class="text-brand-olive">키워드 성격:</strong> ${type}</p>
+                    <p class="text-xs"><strong class="text-brand-olive">예상 검색 규모:</strong> ${volume}</p>
+                    <p class="text-xs"><strong class="text-brand-olive">시장 경쟁도:</strong> ${competition}</p>
+                    <p class="text-xs leading-relaxed mt-2"><strong class="text-brand-darkgreen block mb-0.5">💡 추천 마케팅 전략 가이드:</strong> ${strategy}</p>
+                </div>
+            `;
+            resultBox.classList.remove('hidden');
+        }
+
+        // Update progress bar
+        function updateProgress() {
+            const chks = document.querySelectorAll('.todo-chk');
+            const total = chks.length;
+            let checkedCount = 0;
+
+            chks.forEach(chk => {
+                if (chk.checked) {
+                    checkedCount++;
+                }
+            });
+
+            const percent = Math.round((checkedCount / total) * 100);
+            document.getElementById('progress-bar').style.width = percent + '%';
+            document.getElementById('progress-percent').innerText = percent + '%';
+        }
+    </script>
+</body>
+</html>
