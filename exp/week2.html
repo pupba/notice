@@ -73,7 +73,7 @@
                 <span class="text-sm text-brand-lightgreen font-medium">프레스티크 주식회사 주간 가이드</span>
             </div>
             <button onclick="window.print()" class="bg-brand-gold hover:bg-brand-golddark text-brand-darkgreen font-bold text-sm px-4 py-1.5 rounded shadow transition-all flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0/0/24/24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
                 </svg>
                 PDF로 저장 / 인쇄하기
@@ -190,11 +190,11 @@
                     <div class="no-print mt-3 bg-gray-50 p-4 rounded-xl">
                         <p class="text-xs font-bold text-brand-olive mb-2">💡 자사 주력 제품 리스트 (클릭 시 SEO 팁 제공)</p>
                         <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="product-selector-group">
-                            <button onclick="showProductTip('avocado')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🥑 아보카도오일</button>
-                            <button onclick="showProductTip('olive')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🫒 유기농 올리브오일</button>
-                            <button onclick="showProductTip('balsamic')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🍇 발사믹식초</button>
-                            <button onclick="showProductTip('hemp')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🌿 유기농 대마종자유</button>
-                            <button onclick="showProductTip('gift')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium">🎁 오일 선물세트</button>
+                            <button onclick="showProductTip('avocado')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium font-semibold">🥑 아보카도오일</button>
+                            <button onclick="showProductTip('olive')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium font-semibold">🫒 유기농 올리브오일</button>
+                            <button onclick="showProductTip('balsamic')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium font-semibold">🍇 발사믹식초</button>
+                            <button onclick="showProductTip('hemp')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium font-semibold">🌿 유기농 대마종자유</button>
+                            <button onclick="showProductTip('gift')" class="product-btn py-2 px-3 text-xs bg-white border border-gray-200 rounded-lg text-center hover:border-brand-gold hover:bg-brand-lightgreen/20 transition-all font-medium font-semibold">🎁 오일 선물세트</button>
                         </div>
                         <!-- Tip Display -->
                         <div id="product-tip-box" class="mt-3 bg-brand-lightgreen/30 p-3 rounded-lg border border-brand-gold/30 hidden text-xs leading-relaxed text-brand-darkgreen">
@@ -235,33 +235,157 @@
                     </div>
                 </div>
 
-                <!-- Mission 3 -->
+                <!-- Mission 3 (UPDATED WITH DETAILED IMAGES/MOCKUPS) -->
                 <div class="border-l-4 border-brand-gold pl-4 py-1">
                     <div class="flex items-center gap-2 mb-1">
                         <span class="bg-brand-gold text-brand-darkgreen text-xs font-bold px-2 py-0.5 rounded">미션 3</span>
                         <h3 class="text-base sm:text-lg font-bold text-brand-darkgreen">이커머스 쇼핑 플랫폼 내 연관/대표 키워드 추출</h3>
                     </div>
-                    <p class="text-sm text-gray-600 mb-2">
+                    <p class="text-sm text-gray-600 mb-4">
                         네이버 스마트스토어, 쿠팡, 마켓컬리 등의 이커머스 채널에서 소비자가 실제 어떤 연관검색어로 제품을 둘러보는지 수집합니다.
                     </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
-                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
-                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
-                                <span class="inline-block w-2 h-2 rounded-full bg-green-500"></span> 네이버 스마트스토어
+                    
+                    <!-- Visual Mockups Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                        <!-- 1. Naver Shopping Mockup -->
+                        <div class="border border-green-200 rounded-xl bg-white overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="p-4 bg-green-50/50 border-b border-green-100">
+                                <div class="text-xs font-bold text-green-700 mb-1 flex items-center gap-1.5">
+                                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-green-500"></span> 네이버 스마트스토어
+                                </div>
+                                <p class="text-[11px] text-gray-500 leading-normal">검색창 연관 칩과 상위 스토어명 키워드 조합 분석</p>
                             </div>
-                            <p class="text-[11px] text-gray-500">검색창 하단에 제시되는 쇼핑 연관검색어 및 상위 1~5위 상품명의 조합 키워드 분석</p>
+                            
+                            <!-- Graphic Mockup Area -->
+                            <div class="p-4 bg-gray-50 border-b border-gray-100 flex flex-col gap-3">
+                                <!-- Search bar mockup -->
+                                <div class="bg-white border border-green-500 rounded p-1.5 flex items-center justify-between text-[11px] shadow-sm">
+                                    <span class="text-gray-700 font-semibold pl-1">아보카도오일</span>
+                                    <span class="text-green-500">🔍</span>
+                                </div>
+                                <!-- Related Tags Mockup -->
+                                <div class="space-y-1">
+                                    <p class="text-[9px] font-bold text-gray-400">연관 쇼핑검색어</p>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="bg-gray-200/70 text-gray-700 text-[9px] px-1.5 py-0.5 rounded font-medium border border-gray-300/40">코스트코아보카도오일</span>
+                                        <span class="bg-gray-200/70 text-gray-700 text-[9px] px-1.5 py-0.5 rounded font-medium border border-gray-300/40">퓨어아보카도오일</span>
+                                        <span class="bg-gray-200/70 text-gray-700 text-[9px] px-1.5 py-0.5 rounded font-medium border border-gray-300/40">냉압착아보카도오일</span>
+                                    </div>
+                                </div>
+                                <!-- Product Card Mockup -->
+                                <div class="bg-white border border-gray-200 p-2 rounded text-[10px] space-y-1.5 shadow-sm">
+                                    <div class="flex gap-2">
+                                        <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center text-xs">🥑</div>
+                                        <div class="flex-1 space-y-0.5">
+                                            <span class="bg-green-100 text-green-700 font-bold text-[8px] px-1 rounded">공식브랜드</span>
+                                            <p class="font-bold leading-tight text-gray-800">[올리아베] 100% 엑스트라버진 냉압착 아보카도오일</p>
+                                        </div>
+                                    </div>
+                                    <div class="border-t border-dashed border-gray-100 pt-1 text-[8px] text-gray-400 flex justify-between">
+                                        <span>추출 키워드: <strong>엑스트라버진, 냉압착</strong></span>
+                                        <span class="text-green-500 font-bold">★ 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 bg-white text-[11px] text-gray-600">
+                                <strong class="text-green-700 block mb-1">💡 분석 가이드</strong>
+                                쇼핑 탭 검색창 아래의 <strong class="text-green-600">초록색 연관 키워드</strong>와, 랭킹 1~5위 상품명에 쓰인 '식품 유형' 수식어를 추출하세요.
+                            </div>
                         </div>
-                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
-                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
-                                <span class="inline-block w-2 h-2 rounded-full bg-red-500"></span> 쿠팡 (Coupang)
+
+                        <!-- 2. Coupang Mockup -->
+                        <div class="border border-sky-200 rounded-xl bg-white overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="p-4 bg-sky-50/50 border-b border-sky-100">
+                                <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+                                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-sky-500"></span> 쿠팡 (Coupang)
+                                </div>
+                                <p class="text-[11px] text-gray-500 leading-normal">검색 연관어 칩 및 상세 키워드 추출</p>
                             </div>
-                            <p class="text-[11px] text-gray-500">검색 시 자동 완성어와 하단의 연관검색어 칩(Chip), 골드박스/기획전 판매 방식을 체크</p>
+                            
+                            <!-- Graphic Mockup Area -->
+                            <div class="p-4 bg-gray-50 border-b border-gray-100 flex flex-col gap-3">
+                                <!-- Search bar mockup -->
+                                <div class="bg-white border border-sky-400 rounded-full py-1 px-2.5 flex items-center justify-between text-[11px] shadow-sm">
+                                    <span class="text-gray-700 font-semibold">아보카도오일</span>
+                                    <span class="text-sky-500">🔍</span>
+                                </div>
+                                <!-- Coupang Related Horizontal Scroll Tag Chips -->
+                                <div class="space-y-1">
+                                    <p class="text-[9px] font-bold text-gray-400">추천 검색어 가이드</p>
+                                    <div class="flex gap-1 overflow-x-auto pb-1 custom-scrollbar">
+                                        <span class="bg-sky-50 text-sky-700 text-[8px] font-bold px-2 py-1 rounded-full border border-sky-200 whitespace-nowrap">아보카도오일 캡슐</span>
+                                        <span class="bg-sky-50 text-sky-700 text-[8px] font-bold px-2 py-1 rounded-full border border-sky-200 whitespace-nowrap">아보카도오일 생식</span>
+                                        <span class="bg-sky-50 text-sky-700 text-[8px] font-bold px-2 py-1 rounded-full border border-sky-200 whitespace-nowrap">유기농 아보카도</span>
+                                    </div>
+                                </div>
+                                <!-- Product Card Mockup -->
+                                <div class="bg-white border border-gray-200 p-2 rounded text-[10px] space-y-1.5 shadow-sm">
+                                    <div class="flex gap-2">
+                                        <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center text-xs">🍾</div>
+                                        <div class="flex-1 space-y-0.5">
+                                            <span class="bg-sky-500 text-white font-bold text-[8px] px-1 rounded-sm">로켓배송</span>
+                                            <p class="font-bold leading-tight text-gray-800">퓨어바이 100% 저온압착 엑스트라버진 250ml</p>
+                                        </div>
+                                    </div>
+                                    <div class="border-t border-dashed border-gray-100 pt-1 text-[8px] text-gray-400 flex justify-between">
+                                        <span>추출 키워드: <strong>저온압착, 100%, 250ml</strong></span>
+                                        <span class="text-sky-500 font-bold">리뷰 (288)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 bg-white text-[11px] text-gray-600">
+                                <strong class="text-sky-700 block mb-1">💡 분석 가이드</strong>
+                                쿠팡 앱 내 가로형 스크롤 칩 형태로 추천되는 <strong class="text-sky-600">구매 유도 세부 연관 키워드</strong>를 꼼꼼히 기록하세요.
+                            </div>
                         </div>
-                        <div class="border border-gray-200 p-3 rounded-lg bg-white">
-                            <div class="text-xs font-bold text-brand-darkgreen mb-1 flex items-center gap-1">
-                                <span class="inline-block w-2 h-2 rounded-full bg-purple-500"></span> 마켓컬리 (Kurly)
+
+                        <!-- 3. Market Kurly Mockup -->
+                        <div class="border border-purple-200 rounded-xl bg-white overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="p-4 bg-purple-50/50 border-b border-purple-100">
+                                <div class="text-xs font-bold text-purple-700 mb-1 flex items-center gap-1.5">
+                                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-purple-500"></span> 마켓컬리 (Kurly)
+                                </div>
+                                <p class="text-[11px] text-gray-500 leading-normal">프리미엄 웰빙 큐레이션 및 추천 태그 수집</p>
                             </div>
-                            <p class="text-[11px] text-gray-500">프리미엄 푸드 몰로서, 유기농/친환경 카테고리의 큐레이션 키워드와 후기 키워드 분석</p>
+                            
+                            <!-- Graphic Mockup Area -->
+                            <div class="p-4 bg-gray-50 border-b border-gray-100 flex flex-col gap-3">
+                                <!-- Search bar mockup -->
+                                <div class="bg-white border border-purple-500 rounded py-1 px-2 flex items-center justify-between text-[11px] shadow-sm">
+                                    <span class="text-purple-900 font-semibold">유기농 올리브유</span>
+                                    <span class="text-purple-500">🔍</span>
+                                </div>
+                                <!-- Kurly Curation Style Category Mockup -->
+                                <div class="space-y-1">
+                                    <p class="text-[9px] font-bold text-purple-400">컬리 추천 테마</p>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="bg-purple-100 text-purple-800 text-[8px] px-1.5 py-0.5 rounded font-medium">#샐러드다이어트</span>
+                                        <span class="bg-purple-100 text-purple-800 text-[8px] px-1.5 py-0.5 rounded font-medium">#공복에한스푼</span>
+                                        <span class="bg-purple-100 text-purple-800 text-[8px] px-1.5 py-0.5 rounded font-medium">#냉압착유기농</span>
+                                    </div>
+                                </div>
+                                <!-- Kurly style product row mockup -->
+                                <div class="bg-white border border-gray-200 p-2 rounded text-[10px] space-y-1.5 shadow-sm">
+                                    <div class="flex gap-2">
+                                        <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center text-xs">🥗</div>
+                                        <div class="flex-1 space-y-0.5">
+                                            <span class="border border-purple-300 text-purple-700 text-[7px] px-1 rounded font-bold">Kurly Only</span>
+                                            <p class="font-bold leading-tight text-gray-800">[올리브네] 유기농 냉압착 올리브오일 250ml</p>
+                                        </div>
+                                    </div>
+                                    <div class="border-t border-dashed border-gray-100 pt-1 text-[8px] text-gray-400 flex justify-between">
+                                        <span>추출 키워드: <strong>유기농, 공복섭취, 샐러드용</strong></span>
+                                        <span class="text-purple-600 font-bold">후기 9,999+</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 bg-white text-[11px] text-gray-600">
+                                <strong class="text-purple-700 block mb-1">💡 분석 가이드</strong>
+                                컬리만의 고급스러운 제품 설명 문구와 <strong class="text-purple-600">웰빙 관련 테마 큐레이션 키워드</strong>를 벤치마킹하는 것이 좋습니다.
+                            </div>
                         </div>
                     </div>
                 </div>
